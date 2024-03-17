@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITP102-2IT-D-PrelimLaboratoryExamination.</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+*{
+    margin: 0;
+    padding: 0;
+    color:#ffffff;
+    font-family: 'Helvetica Neue', sans-serif;
+    
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+#about::-webkit-scrollbar{
+    display: none;
+}
+html{
+    scrollbar-width: none;
+}
+#about{
+    scrollbar-width: none;
+}
+body{
+    -ms-overflow-style: none;
+}
+.main-div1{
+    height: 100vh;
+    background-image: url("/background-photo.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    -webkit-user-select: none; 
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3em 0.5em;
+}
+.buttons {
+    border: none;
+    background-color: transparent;
+    color: inherit; 
+    text-decoration: none;
+    cursor: pointer; 
+    padding: 0;
+    font-size: 16px;
+    transition: text-decoration 3s ease; 
+    cursor: default;
+}
+
+.buttons:hover {
+    text-decoration: underline; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); 
+}
+.heading-wrapper{
+    display: flex; 
+    align-items: center;
+    height: 100vh;
+}
+.heading-div{
+    top: 200px;
+    left: 200px;
+    width: 650px;
+    margin-left: 15em;
+}
+.women{
+    font-weight: 200;                                       
+    font-size:10.5em;
+}
+.sub-title{
+    font-weight: 300;                                       
+    font-size:1.2em;
+    font-style: italic;
+}
+/* END OF THE FIRST PAGE */
+.section-2{
+    height: 100vh;
+    background-color: #141414;
+    display: flex;
+}
+.paragraph-container > p{
+    color: #000;
+    font-size: 17px;
+}
+.paragraph-div{
+    height: 70vh;
+    width: 30vw;
+    padding-top: 8rem;
+}
+.paragraph-container{
+    background-color: #ffffff;
+    padding: 3em;
+}
+.button-container{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.2rem;
+}
+#nav-toggle {
+    height: 5rem;
+    width: 5rem;
+    z-index: 3;
+    left: 14%;
+    bottom: 3rem;
+    background-color: rebeccapurple;
+    border: none;
+    border-radius: 5rem;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    outline: none;
+    box-shadow: 0rem 0rem 4rem rgba(0 0 0 / 35%);
+    cursor: pointer;
+    transition: transform, background-color;
+    transition-timing-function: ease;
+    transition-duration: 400ms;
+    
+  }
+  
+  #nav-toggle:hover {
+    transform: scale(1.04);
+    background-color: rgb(0, 190, 25);
+  }
+  
+  #nav-toggle:active {
+    transform: scale(0.96);
+    background-color: rgb(231, 71, 43);
+  }
+
+#image-div{
+    height: 100vh;
+    width:70vw;
+    user-select: none;
+    overflow: hidden;
+    row-gap: 0.5vmin;
+    grid-column-gap: 0.9vmin;
+    display: grid;    
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+    grid-template-rows: 1fr 1fr;
+    padding-left: 1vmin;
+}
+.image{
+    width: 35vmin;
+    height: 50vmin;
+    object-fit: cover;
+    object-position: center;
+    display: inline-block; 
+}
+.image:nth-child(1), .image:nth-child(5) {
+    animation: moveRows1 15s linear infinite;
+    padding-top: 0.2em;
+}
+
+@keyframes moveRows1 {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-5%); }
+    50% { transform: translateY(-3%); }
+    75% { transform: translateY(-3%); }
+    100% { transform: translateY(0); }
+}
+.image:nth-child(2), .image:nth-child(6) {
+    animation: moveRows2 15s linear infinite;
+}
+
+@keyframes moveRows2 {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-1%); }
+    50% { transform: translateY(-5%); }
+    75% { transform: translateY(-3%); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes moveRows3 {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-2%); }
+    50% { transform: translateY(-4%); }
+    75% { transform: translateY(-2%); }
+    100% { transform: translateY(0); }
+}
+.image:nth-child(3), .image:nth-child(7) {
+    animation: moveRows3 15s linear infinite;
+    padding-top: 0.2em;
+}
+@keyframes moveRows4 {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-3%); }
+    50% { transform: translateY(-1%); }
+    75% { transform: translateY(-5%); }
+    100% { transform: translateY(0); }
+}
+.image:nth-child(4), .image:nth-child(8) {
+    animation: moveRows4 15s linear infinite;
+    padding-top: 0.3em;
+}
+
+/* section3 */
+
+#part3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #141414;
+    height: 100vh;
+}
+.line{
+    font-size: 3.8rem;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+#text:has(.fancy:hover) .word:not(.fancy:hover) {
+    opacity: 0.6;
+    transition-duration:700ms;
+  }
+.fancy > .letter{
+    display: inline-block;
+    transition: transform 350ms ease;
+}
+.fancy:hover > .letter:nth-child(1) {
+    transform: translate(-80%, 60%) rotate(8deg);
+}
+.fancy:hover > .letter:nth-child(2) {
+    transform: translate(-40%, 20%) rotate(4deg);
+}
+.fancy:hover > .letter:nth-child(3) {
+    transform: translate(-10%, 60%) rotate(-6deg);
+}
+.fancy:hover > .letter:nth-child(4) {
+    transform: translate(0%, 8%) rotate(-8deg);
+}
+.fancy:hover > .letter:nth-child(5) {
+    transform: translate(0%, -20%) rotate(5deg);
+}
+.fancy:hover > .letter:nth-child(6) {
+    transform: translate(-80%, 60%) rotate(8deg);
+}
+.fancy:hover > .letter:nth-child(7) {
+    transform: translate(0%, 20%) rotate(-3deg);
+}
+.fancy:hover > .letter:nth-child(8) {
+    transform: translate(0%, -40%) rotate(-5deg);
+}
+.fancy:hover > .letter:nth-child(9) {
+    transform: translate(0%, 15%) rotate(10deg);
+}
+.fancy:hover > .letter:nth-child(10) {
+    transform: translate(-80%, 60%) rotate(8deg);
+}
+.fancy:hover > .letter:nth-child(11) {
+    transform: translate(0%, -50%) rotate(8deg);
+}
+.fancy:hover > .letter:nth-child(12) {
+    transform: translate(0%, 15%) rotate(-6deg);
+}
+.fancy:hover > .letter:nth-child(13) {
+    transform: translate(50%, -10%) rotate(-3deg);
+}
+.fancy:hover > .letter:nth-child(14) {
+    transform: translate(120%, -30%) rotate(-10deg);
+}
+.fancy:hover > .letter:nth-child(15) {
+    transform: translate(0%, 15%) rotate(10deg);
+}
+.fancy:hover > .letter:nth-child(16) {
+    transform: translate(0%, 18%) rotate(-3deg);
+}
+.fancy:hover > .letter:nth-child(17) {
+    transform: translate(0%, 8%) rotate(-8deg);
+}
+.fancy:hover > .letter:nth-child(18) {
+    transform: translate(-20%, 20%) rotate(4deg);
+}
+    </style>
+    
+</head>
+<body>
+    <div class="main-div1">
+        <nav class="nav-bar">
+            <div>
+                <p>RUTHER</p>
+            </div>
+            <div>
+                <button id="reloadButton" class="buttons">HOME</button>
+                <span>/</span>
+                <button onclick="scrollToBottom()" class="buttons">CONTENT</button>
+                <span>/</span>
+                <button onclick="scrollToBottom2()" class="buttons">ABOUT</button>
+            </div>
+            <div>
+                <span id="hrs">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+            </div>
+        </nav>    
+        <div class="heading-wrapper">
+            <div class="heading-div">
+                    <h1 class="women">WOMEN</h1>
+                    <h1 class="women">THRIVE</h1>
+                    <h5 class="sub-title">&#160;&#160;&#160;&#160;Celebrating Women's Impact and Influence</h5>
+             </div>
+        </div>
+        
+    </div>
+    <div id="part2" class="section-2">
+        <div class="paragraph-div">
+            <div class="paragraph-container">
+                <p><strong style="color: black;">Women's Presence Can Make a Difference!</strong>
+                        <br>
+                        <br>
+                    Women's Month in March serves as a powerful reminder of the transformative impact women have on society. From politics to business, STEM to education, women's presence has been instrumental in driving progress and fostering positive change. In politics, women have shattered glass ceilings and brought fresh perspectives to leadership roles, enriching decision-making processes and advocating for justice and equality.
+                    <br>
+                    <br>
+                    In business, women entrepreneurs and executives have demonstrated exceptional vision and resilience, driving economic growth and empowering communities. Their leadership has fostered inclusive workplaces and inspired the next generation of leaders. In STEM, women have made groundbreaking discoveries and challenged stereotypes, driving innovation and advancing human knowledge. By encouraging more women to pursue careers in these fields, we can tap into diverse talent and perspectives that fuel progress and innovation.
+                    <br>
+                    <br>
+                    In education, women educators and researchers have shaped young minds and promoted lifelong learning. Their dedication to education equity has empowered individuals to fulfill their potential and contribute meaningfully to society. As we celebrate Women's Month, let us honor the achievements of women across all fields, address challenges like gender inequality, and work towards a future where women's presence continues to make a profound difference in shaping a more equitable and inclusive world.</p>
+            </div>
+            <div class="button-container">
+                <button onclick="scrollToBottom2()" id="nav-toggle" type="button">ABOUT</button>
+            </div>
+        </div>
+        
+        </button>
+        <div id="image-div">
+            <img class="image" src="https://images.unsplash.com/photo-1552699611-e2c208d5d9cf?q=80&w=2008&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" draggable="false">
+            <img class="image" src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" draggable="false">
+            <img class="image" src="https://images.unsplash.com/photo-1475609471617-0ef53b59cff5?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" draggable="false">
+            <img class="image" src="https://images.unsplash.com/photo-1539701938214-0d9736e1c16b?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" draggable="false">
+            <img class="image" src="https://images.unsplash.com/photo-1607868894064-2b6e7ed1b324?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" draggable="false">
+            <img class="image" src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" draggable="false">
+            <img class="image" src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" draggable="false">
+            <img class="image" src="https://images.unsplash.com/photo-1551845728-6820a30c64e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" draggable="false">
+        </div>
+    </div>
+    <div id="part3">
+        <div class="show-container">
+            <div id="text"><div id="text"></div>
+            <div class="line">
+                <p class="word">RUTHER&#160;</p>
+                <p class="word">MARCUS</p>
+            </div>
+            <div class="line">
+                <p class="word">BERINO</p>
+                <p class="word">AND</p>
+            </div>
+            <div class="line">
+                <p class="word fancy">RONAN</p>
+                <P class="word fancy">BUENDIA</P>
+            </div>
+            <div class="line">
+                <p id="details" class="word fancy">ITP102&#160;2IT-D&#160;31723</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let hrs = document.getElementById("hrs");
+let min = document.getElementById("min");
+let sec = document.getElementById("sec");
+
+setInterval(() => {
+    let currentTime = new Date();
+
+    hrs.innerHTML = currentTime.getHours();
+    min.innerHTML = currentTime.getMinutes();
+    sec.innerHTML = currentTime.getSeconds();
+},1000)
+
+function scrollToBottom() {
+    document.getElementById('part2').scrollIntoView({ behavior: 'smooth' });
+}
+function scrollToBottom2() {
+    document.getElementById('part3').scrollIntoView({ behavior: 'smooth' });
+}
+
+// LAST PART
+const enhance = id => {
+    const element = document.getElementById(id),
+    text = element.innerText.split("");
+
+    element.innerText = "";
+
+    text.forEach(letter =>{
+        const span = document.createElement("span");
+
+        span.className = "letter";
+
+        span.innerText = letter;
+
+        element.appendChild(span);
+    });
+}
+
+enhance("details");
+
+const reloadButton = document.getElementById('reloadButton');
+
+    // Add a click event listener to the button
+    reloadButton.addEventListener('click', () => {
+        // Reload the website
+        location.reload();
+});
+    </script>
+</body>
+</html>
